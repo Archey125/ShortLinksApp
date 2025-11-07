@@ -28,3 +28,12 @@
 - new https://ya.ru/search/?text=java --user 11111111-1111-1111-1111-111111111111
 - open clck.ru/XXXXX
 - list --user 11111111-1111-1111-1111-111111111111
+
+## Стек
+- Java Abstract Window Toolkit
+- Java Input/Output (IO)
+- Java.net
+- Java security
+- Java time
+- Java util
+- Сборщик Maven
