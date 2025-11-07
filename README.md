@@ -13,3 +13,18 @@
 ## Требования
 - Java 17+
 - Maven 3.8+
+
+## Команды
+- new <url> [--limit N] [--user <uuid>]      Создать короткую ссылку. Если --user не указан, будет сгенерирован новый UUID.
+- open <short|slug>                          Перейти по короткой ссылке (открывает браузер), учитывает лимит и TTL.
+- list --user <uuid>                         Показать все ссылки пользователя.
+- delete <short|slug> --user <uuid>          Удалить ссылку (только автор).
+- notifications --user <uuid>                Показать уведомления пользователя.
+- help                                       Показать помощь.
+- exit                                       Выход.
+
+## Пример тестирования:
+- new https://www.youtube.com/ --limit 3
+- new https://ya.ru/search/?text=java --user 11111111-1111-1111-1111-111111111111
+- open clck.ru/XXXXX
+- list --user 11111111-1111-1111-1111-111111111111
